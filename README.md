@@ -16,10 +16,6 @@ This project explores the limitations of **Dense Networks (MLP)** versus **Convo
 
 **"Peeking inside the Black Box"**: Understanding where the model looks to make a decision.
 
-|  |  |  |
-| --- | --- | --- |
-| **Grad-CAM Analysis**<br>
-
 <br>Model focusing on the truck pictogram. | **Feature Extraction**<br>
 
 <br>Layer 1 filters detecting edges/colors. | **Robustness Failure**<br>
