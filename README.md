@@ -32,22 +32,21 @@ The pipeline demonstrates the complete lifecycle from raw tensor processing to m
 graph LR
     A[GTSRB Dataset] --> B{Data Pipeline}
     B -->|Original Tensor| C[Standard Training]
-    B -->|Spatial Shift Transform| D[Stress Test (DS2)]
+    B -->|Spatial Shift| D["Stress Test (DS2)"]
     
-    subgraph Model Architectures
-    C --> E[MLP Baseline]
-    C --> F[CNN / FCNN]
-    D --> E
-    D --> F
+    subgraph Models [Model Architectures]
+        C --> E[MLP Baseline]
+        C --> F[CNN / FCNN]
+        D --> E
+        D --> F
     end
     
     F --> G[Inference]
     G --> H[Performance Metrics]
     G --> I[Grad-CAM XAI]
     
-    H --> J((Final Technical Report))
+    H --> J((Final Report))
     I --> J
-
 ```
 
 ---
