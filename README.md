@@ -11,23 +11,6 @@ This project quantifies the impact of **Inductive Bias** in Computer Vision arch
 
 ---
 
-## 📸 Visualization & Interpretability
-
-**"Peeking inside the Black Box"**: Visualizing feature extraction and decision boundaries.
-
-| **Explainability (Grad-CAM)** | **Feature Extraction** | **Robustness Failure** |
-| --- | --- | --- |
-|  |  |  |
-| Model validates the decision by<br>
-
-<br>focusing on the truck pictogram. | Layer 1 kernels learning<br>
-
-<br>edge and color detectors. | MLP failing (~24% Acc) when<br>
-
-<br>spatial topology is disrupted. |
-
----
-
 ## 💡 Project Overview
 
 In **Autonomous Driving**, a perception system must be robust against camera vibrations or misalignment. A stop sign is a stop sign, regardless of its position in the frame. This project empirically proves why the lack of spatial invariance in MLPs makes them unsuitable for raw pixel processing.
