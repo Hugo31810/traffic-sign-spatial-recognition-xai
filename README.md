@@ -1,13 +1,11 @@
-¡Entendido! Vamos a darle ese toque **profesional y visual** utilizando los *shields* (escudos/insignias) de **Shields.io** con el estilo `for-the-badge` (el rectangular grande), que es el estándar actual en GitHub para portafolios de ingeniería.
-
-He seleccionado los logos exactos de las tecnologías que hemos usado en estos notebooks (PyTorch, Pandas, NumPy, etc.).
-
-Copia y pega el siguiente código en tu archivo `README.md`:
-
----
-
 # 🚦 Traffic Sign Spatial Recognition & XAI
 
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-%23F37626.svg?style=for-the-badge&logo=Jupyter&logoColor=white)
 > **Comparative analysis of spatial invariance in Neural Networks and Explainable AI (XAI) for Autonomous Driving perception systems.**
 
 This project explores the limitations of **Dense Networks (MLP)** versus **Convolutional Networks (CNN)** in the context of **Spatial Invariance**. It implements an end-to-end pipeline for Traffic Sign Recognition (GTSRB) including custom dataset manipulation to test robustness, and utilizes **Grad-CAM** to audit model decision-making processes, ensuring the system identifies semantic features (pictograms) rather than contextual noise.
@@ -127,31 +125,12 @@ The project is structured in sequential notebooks for reproducibility:
 
 ---
 
-## 📂 Project Structure
-
-```text
-.
-├── metrics/                # CSV logs for Loss/Accuracy curves
-│   ├── train_loss_cnn.csv
-│   └── test_acc_mlp.csv
-├── models/                 # Saved .pth state dictionaries
-│   ├── cnn_best.pth
-│   └── mlp_ds2.pth
-├── notebooks/              # Jupyter Notebooks (Source Code)
-├── src/                    # Python modules
-│   ├── models.py           # Architecture definitions (CNN, MLP class)
-│   └── utils.py            # Helper functions (plotting, training loops)
-└── README.md
-
-```
-
----
 
 ## 👨‍💻 Author
 
 **Hugo Salvador Aizpún**
 
 *Degree in Artificial Intelligence*
-*Focus: Computer Vision & Deep Learning*
+*Focus: Machine Learning II*
 
 [GitHub Profile](https://www.google.com/search?q=https://github.com/Hugo31810)
