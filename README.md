@@ -24,6 +24,20 @@ In **Autonomous Driving**, a perception system must be robust against camera vib
 
 ---
 
+📊 The Dataset: GTSRB
+The model was trained on the German Traffic Sign Recognition Benchmark (GTSRB), a de-facto standard for multi-class image classification in Computer Vision. It presents a high challenge due to real-world variations such as varying light conditions, motion blur, and physical damage to the signs.
+
+Classes: 43 distinct categories (Speed limits, Stop, Yield, Warnings, etc.).
+
+Volume: >50,000 images (Train/Test split).
+
+Resolution: Varying sizes (resized to 32x32 for this experiment).
+
+<img width="1200" height="1200" alt="image" src="https://github.com/user-attachments/assets/7727de18-1808-421c-88e1-36ebc20af1a6" />
+
+
+---
+
 ## 🏗️ System Architecture
 
 The pipeline demonstrates the complete lifecycle from raw tensor processing to model auditing.
@@ -103,22 +117,6 @@ The project is structured in sequential notebooks for reproducibility:
 3. **`03_CNN_Architecture.ipynb`**: Implementing the robust CNN/FCNN architecture and comparing metrics.
 4. **`04_XAI_Visualization.ipynb`**: Running Grad-CAM and filter visualization hooks.
 
----
-
-## 📂 Project Structure
-
-```text
-.
-├── metrics/                # CSV logs for Loss/Accuracy curves
-│   ├── train_loss_cnn.csv
-│   └── test_acc_mlp.csv
-├── models/                 # Saved .pth state dictionaries (Inference ready)
-├── notebooks/              # Jupyter Notebooks (Source Code)
-├── src/                    # Python helper modules
-├── assets/                 # Images for README
-└── README.md
-
-```
 
 ---
 
